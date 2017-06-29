@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    tools:context="com.example.android.viewsuses.MainActivity">
+
+
+
+    <ListView
+           android:id="@+id/lvContacts"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+    </ListView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recycled view"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="addContact"/>
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvTesting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            >
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>
